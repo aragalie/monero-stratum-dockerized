@@ -1,0 +1,51 @@
+{
+    "address": "etnk6YiVFAy1VRSxVQhfHnezv3YNHueqe9xk71WDdr16frH9a3aStdmSUYQqfxQpiCbLXiED5diubd666u1fLrbe6F9WAHNkZ6",
+    "bypassAddressValidation": false,
+    "bypassShareValidation": true,
+
+  "threads": 2,
+
+  "estimationWindow": "15m",
+  "luckWindow": "24h",
+  "largeLuckWindow": "72h",
+
+    "blockRefreshInterval": "1s",
+
+  "stratum": {
+      "timeout": "15m",
+
+    "listen": [
+      {
+        "host": "0.0.0.0",
+        "port": 1111,
+        "diff": 100,
+        "maxConn": 32768
+      },
+      {
+        "host": "0.0.0.0",
+        "port": 3333,
+        "diff": 500,
+        "maxConn": 32768
+      }
+    ]
+  },
+
+  "frontend": {
+    "enabled": true,
+    "listen": "0.0.0.0:8082",
+    "login": "admin",
+    "password": "",
+    "hideIP": false
+  },
+
+  "upstreamCheckInterval": "5s",
+
+  "upstream": [
+    {
+      "name": "Electroneum",
+      "host": "localhost",
+      "port": 26968,
+      "timeout": "10s"
+    }
+  ]
+}
