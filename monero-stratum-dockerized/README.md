@@ -10,7 +10,7 @@ A docker which will allow you to solo mine using any monero miner, be it CPU or 
 
 - A monero-based wallet+daemon
 - Docker installed
-
+- Miner of choice (eg. xmr-stak-nvidia, ccminer, etc)
 
 ## How it works
 By running `start.sh`you are automatically creating a [Monero Stratum pool](https://github.com/sammy007/monero-stratum.git) in your local machine, inside the Docker instance.
