@@ -1,18 +1,18 @@
 
-This is largely based on @PedroD's monero-stratum-docker (https://github.com/PedroD/monero-stratum-docker). He hasn't updated it in many months, so i thought of having here a working version of it (as of Dec '17).
+This is largely based on [@PedroD's monero-stratum-docker](https://github.com/PedroD/monero-stratum-docker). He hasn't updated it in many months, so i thought of having here a working version of it (as of Dec '17).
 
-#Purpose
+# Purpose
 
 A docker which will allow you to solo mine using any monero miner, be it CPU or GPU (literally any miner that works with a stratum pool).
 
 
-##Requirements
+## Requirements
 
 - A monero-based wallet+daemon
 - Docker installed
 
 
-##How it works
+## How it works
 By running `start.sh`you are automatically creating a [Monero Stratum pool](https://github.com/sammy007/monero-stratum.git) in your local machine, inside the Docker instance.
 
 You can then connect any miner you like to this pool by pointing it to localhost:3333 (or remote_ip:3333 if your miner is on another computer).
@@ -26,7 +26,7 @@ For many wallets, if it is your first time using it, you'll have to download the
 
 
 
-##Steps
+## Steps
 
 1. Install your monero-based wallet GUI.
 2. Download the blockchain for your wallet and make sure that it is fully syncronized. 
@@ -41,9 +41,9 @@ For many wallets, if it is your first time using it, you'll have to download the
 
 **Note:** You can add more miners, and if you are able to host this online you can create your own online private pool!
 
-##Acknowledgements
+## Acknowledgements
 
-Thanks again to @PedroD for creating the initial Docker file and writing the instructions and to @Sammy007 for the Monero-Stratum tool itself.
+Thanks again to [@PedroD](https://github.com/PedroD/) for creating the initial Docker file and writing the instructions and to [@Sammy007](https://github.com/sammy007/) for the Monero-Stratum tool itself.
 
 
 ### Donation Bitcoin address:
